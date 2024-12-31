@@ -41,7 +41,7 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered, ' + name_on_order+ '! ' ,  icon="✅")
 
-if ingrediets_list:
+if ingredients_list:
     ingredients_str=''
     for fruit_chosen in ingrdients_list:
         ingredients_str += fruit_chosen
